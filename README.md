@@ -1,6 +1,8 @@
 # machineCode2Mips55
 >   translate machine code back to mips.asm, supporting 55 instructions including 'MUL' other 54 instructions. 
+>   
 >   (MARS MIPS simulator -settings-memoryConfig-default)
+>   
 
 + addi
 + addiu
@@ -64,3 +66,4 @@
 >   当时给的只有机器码，然后就随便写了一个翻译，写得比较丑😣
 > 
 >   如果现在用的还是同一份测试文件的话就直接把example里的代码拿去用吧😘
+>   
