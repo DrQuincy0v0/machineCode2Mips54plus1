@@ -3,45 +3,48 @@ translate machine code back to mips.asm, supporting 55 instructions including 'M
 
 + addi
 + addiu
-+ andi
-+ ori
-+ sltiu
-+ lui
-+ xori
-+ slti
 + addu
-+ and
-+ beq
-+ bne
-+ j
-+ jal
-+ jr
-+ lw
-+ xor
-+ nor
-+ or
++ add
++ sub
++ subu 
++ sltiu
++ slti
 + sll 
 + sllv 
 + sltu 
 + sra
 + srl 
-+ subu 
-+ sw
-+ add
-+ sub
 + slt
 + srlv
 + srav
-+ clz
-+ divu
-+ eret
++ lui
++ xori
++ andi
++ ori
++ and
++ xor
++ nor
++ or
++ beq
++ bgez
++ bne
++ j
++ jal
++ jr
 + jalr
++ lw
 + lb
 + lbu
 + lhu
++ sw
 + sb
 + sh
 + lh
++ clz
++ eret
++ syscall
++ teq
++ break
 + mfc0
 + mfhi
 + mflo
@@ -50,14 +53,13 @@ translate machine code back to mips.asm, supporting 55 instructions including 'M
 + mtlo
 + mul
 + multu
-+ syscall
-+ teq
-+ bgez
-+ break
-+ div
 + mult
++ div
++ divu
+
 
 ##  同济大学 CS 计算机组成原理 
 
-  当时给的只有机器码，然后就随便写了一个翻译，写得比较丑😣
-  如果现在用的还是同一份测试文件的话就直接把example里的代码拿去用吧😘
+    当时给的只有机器码，然后就随便写了一个翻译，写得比较丑😣
+  
+    如果现在用的还是同一份测试文件的话就直接把example里的代码拿去用吧😘
